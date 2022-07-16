@@ -3,16 +3,16 @@ services:
   reverseproxy:
     build:
       context: ./udagram-reverseproxy
-    image: victory201/victory202/reverseproxy
+    image: victory201/reverseproxy
   backend_user:
     build:
       context: ./udagram-api-user
-    image: victory201/victory202/udagram-api-user
+    image: victory201/udagram-api-user
   backend_feed:
     build:
       context: ./udagram-api-feed
-    image: victory201/victory202/udagram-api-feed
+    image: victory201/udagram-api-feed
   frontend:
     build:
       context: ./udagram-frontend
-    image: victory201/victory202/udagram-frontend:local
+    image: victory201/udagram-frontend:local
